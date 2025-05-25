@@ -7,68 +7,77 @@
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
+
+  <!-- 🎮 Start Screen -->
   <div id="start-screen">
-  <h1>🐍 Snake Game</h1>
+    <h1>🐍 Snake Game</h1>
 
-  <label for="speed">Speed:</label>
-  <select id="speed">
-    <option value="200">Slow</option>
-    <option value="150" selected>Normal</option>
-    <option value="100">Fast</option>
-  </select>
+    <label for="speed">Speed:</label>
+    <select id="speed">
+      <option value="200">Slow</option>
+      <option value="150" selected>Normal</option>
+      <option value="100">Fast</option>
+    </select>
 
-  <br><br>
+    <br><br>
 
-  <label for="grid">Grid Size:</label>
-  <select id="grid">
-    <option value="10">Small</option>
-    <option value="20" selected>Medium</option>
-    <option value="30">Large</option>
-  </select>
+    <label for="grid">Grid Size:</label>
+    <select id="grid">
+      <option value="10">Small</option>
+      <option value="20" selected>Medium</option>
+      <option value="30">Large</option>
+    </select>
 
-  <br><br>
+    <br><br>
 
-  <!-- 🎨 Theme Selector goes here -->
-  <label for="theme">Theme:</label>
-  <select id="theme">
-    <option value="classic" selected>Classic</option>
-    <option value="neon">Neon</option>
-    <option value="ice">Ice</option>
-  </select>
+    <label for="theme">Theme:</label>
+    <select id="theme">
+      <option value="classic" selected>Classic</option>
+      <option value="neon">Neon</option>
+      <option value="ice">Ice</option>
+    </select>
 
-  <br><br>
+    <br><br>
 
-  <label for="walls">Walls:</label>
-<select id="walls">
-  <option value="off" selected>Off</option>
-  <option value="on">On</option>
-</select>
+    <label for="walls">Walls:</label>
+    <select id="walls">
+      <option value="off" selected>Off</option>
+      <option value="on">On</option>
+    </select>
 
-<br><br>
+    <br><br>
 
-  <button id="start-btn">Start Game</button>
-</div>
+    <button id="start-btn">Start Game</button>
+  </div>
 
+  <!-- 🕹️ Game Container -->
   <div id="game-container" style="display: none;">
 
+    <!-- 💀 Game Over Modal -->
     <div id="game-over-screen" style="display: none;">
-  <h2>💀 Game Over</h2>
-  <p id="game-over-message">You lost!</p>
-  <button id="play-again-btn">Play Again</button>
-  <button id="main-menu-btn">Main Menu</button>
-</div>
+      <h2>💀 Game Over</h2>
+      <p id="game-over-message">You lost!</p>
+      <button id="play-again-btn">Play Again</button>
+      <button id="main-menu-btn">Main Menu</button>
+    </div>
 
-  <button onclick="resetHighScore()">Reset High Score</button>
-  <div id="score">
-     Score: <span id="current-score">0</span> |
-     High Score: <span id="high-score">0</span>
-  </div>
+    <!-- 📊 Score and Reset -->
+    <button onclick="resetHighScore()">Reset High Score</button>
+    <div id="score">
+      Score: <span id="current-score">0</span> |
+      High Score: <span id="high-score">0</span>
+    </div>
+
+    <!-- 🎯 Game Canvas -->
     <canvas id="game-canvas" width="400" height="400"></canvas>
+
+    <!-- 🔄 Restart Button -->
     <button id="restart-btn">Restart</button>
   </div>
 
+  <!-- 📦 Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
   <script src="scripts/game.js"></script>
-</body>
 
+</body>
 </html>
