@@ -1,0 +1,123 @@
+#start-screen {
+  text-align: center;
+}
+
+#start-btn, #restart-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #33ff33;
+  color: black;
+  margin-top: 20px;
+}
+
+
+/* Container to center everything */
+#game-container {
+  text-align: center;
+}
+
+/* Score text styling */
+#score {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Canvas styles – where the game will be drawn */
+canvas {
+  background-color: #111;
+  border: 2px solid #33ff33;
+}
+
+/* Body layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* dark gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: monospace;
+  color: white;
+}
+
+/* Start screen styling */
+#start-screen {
+  text-align: center;
+  color: white;
+}
+
+/* Game container layout */
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Canvas style */
+canvas {
+  border: 2px solid lime;
+  background-color: #111; /* canvas stays black */
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #33ff33;
+  color: black;
+  font-weight: bold;
+}
+
+#score {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Game over flash effect */
+.flash {
+  animation: flashOut 0.4s ease forwards;
+}
+
+@keyframes flashOut {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#game-over-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #111;
+  padding: 20px;
+  border: 2px solid lime;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+  box-shadow: 0 0 20px lime;
+}
+
+#game-over-screen button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #33ff33;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
