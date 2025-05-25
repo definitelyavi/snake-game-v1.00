@@ -6,6 +6,7 @@
  * Last updated: May 24, 2025
  */
 
+
 // 🎮 Get canvas and context
 const canvas = document.getElementById("game-canvas");
 const ctx = canvas.getContext("2d");
